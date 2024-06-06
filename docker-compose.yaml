@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: localization
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: f65c9f14-82ca-4c83-a330-d076727809db
+    ports:
+      - "5434:5432"
